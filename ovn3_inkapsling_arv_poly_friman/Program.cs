@@ -6,6 +6,8 @@ namespace ovn3_inkapsling_arv_poly_friman
     {
         static void Main(string[] args)
         {
+            PersonHandler personHandler = new PersonHandler();
+            /*
             Person person = new Person();
             try
             {
@@ -34,6 +36,15 @@ namespace ovn3_inkapsling_arv_poly_friman
 
             person.Height = 197;
             person.Weight = 95;
+
+            personHandler.SetAge(person, 43);
+            */
+            Person person2 = personHandler.CreatePerson(15, "John", "Smith", 140, 45);
+            Person person3 = personHandler.CreatePerson(15, "Jack", "Johnson", 150, 55);
+
+            personHandler.SetFName(person2,"Micke");
+            Console.WriteLine(person2.Age);
+            Console.WriteLine(person2.FName);
         }
     }
 }

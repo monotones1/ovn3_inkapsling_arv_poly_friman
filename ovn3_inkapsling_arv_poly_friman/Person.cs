@@ -9,8 +9,8 @@ namespace ovn3_inkapsling_arv_poly_friman
         private int age;
         private string fName;
         private string lName;
-        private int height;
-        private int weight;
+        private double height;
+        private double weight;
 
         public int Age
         {
@@ -44,12 +44,12 @@ namespace ovn3_inkapsling_arv_poly_friman
                     throw new ArgumentException("LName är obligatorisk och får inte vara mindre än 3 tecken eller större än 15 tecken.");
             }
         }
-        public int Height
+        public double Height
         {
             get { return height; }
             set { height = value; }
         }
-        public int Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; } 
