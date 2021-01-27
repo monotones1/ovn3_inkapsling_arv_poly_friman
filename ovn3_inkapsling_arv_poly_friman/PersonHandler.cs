@@ -16,6 +16,18 @@ namespace ovn3_inkapsling_arv_poly_friman
             person.Weight = weight;
             return person;
         }
+        /*
+        public Person GetAllPersonData(Person pers)
+        {
+            Person person = new Person();
+            person.Age = age;
+            person.FName = fname;
+            person.LName = lname;
+            person.Height = height;
+            person.Weight = weight;
+            return person;
+        }
+        */
         public void SetAge(Person pers, int age)
         {
             pers.Age = age;

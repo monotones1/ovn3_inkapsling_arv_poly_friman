@@ -4,6 +4,10 @@ using System.Text;
 
 namespace ovn3_inkapsling_arv_poly_friman
 {
+    interface IPerson
+    {
+        string Talk(string sentence);
+    }
     class Person
     {
         private int age;
